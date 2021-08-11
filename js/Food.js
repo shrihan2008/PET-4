@@ -9,8 +9,7 @@ class Food{
 
         this.foodStock=foodStock;
         this.lastFed=lastFed;
-        var feed=createButton('Feed the dog')
-        feed.position(400,100)
+
         
 
         

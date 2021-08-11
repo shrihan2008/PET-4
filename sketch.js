@@ -35,6 +35,10 @@ function setup() {
   feed1.position(500,100);
   feed1.mousePressed(addFoods)
 
+  feed=createButton('Feed the dog')
+  feed.position(400,100)
+  feed.mousePressed(feedDog)
+
   bath1=createButton('I need a bath')
   bath1.position(600,100)
   sleep1=createButton('I need a sleep')
