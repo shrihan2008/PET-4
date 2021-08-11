@@ -7,7 +7,7 @@ function preload()
 	//load images here
   dog=loadImage("images/dogImg.png")
   dog_happy=loadImage("images/dogImg1.png")
-  bottleimage=loadImage("images/Milk.png")
+  bottleimage=loadImage("images/milk.png")
   garden_img=loadImage("images/Garden.png")
   living_img=loadImage("images/LivingRoom.png")
   bedroom_img=loadImage("images/BedRoom.png")
