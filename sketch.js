@@ -72,7 +72,7 @@ function draw() {
   }
   else{
     dog2.addImage(lazy)
-    lazy.resize(100,100)
+    lazy.resize(500,500)
     bottleimage.visible=true
   }
 
