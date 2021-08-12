@@ -78,38 +78,38 @@ function draw() {
 
   if(gameState===1){
     dog2.addImage(dog_happy)
-    dog2.scale=0.175
+    dog2.scale=0.8
     dog.y=250
   }
 
   if(gameState===2){
     dog2.addImage(lazy)
-    dog2.scale=0.175
+    dog2.scale=0.8
     bottleimage.visible=false
     dog.y=250
   }  
   
   if(gameState===3){
     dog2.addImage(washroom_img)
-    dog2.scale=2
+    dog2.scale=.8
     bottleimage.visible=false
   }
   
   if(gameState===4){
     dog2.addImage(bedroom_img)
-    dog2.scale=2
+    dog2.scale=.8
     bottleimage.visible=false
   }
 
   if(gameState===5){
     dog2.addImage(garden_img)
-    dog2.scale=1.5
+    dog2.scale=.8
     bottleimage.visible=false
   }
         
   if(gameState===6){
     dog2.addImage(living_img)
-    dog2.scale=2
+    dog2.scale=.8
     bottleimage.visible=false
   }
   
