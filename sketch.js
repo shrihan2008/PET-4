@@ -56,7 +56,7 @@ function setup() {
   bath1.mousePressed(updateGameStateToBath);
   sleep1.mousePressed(updateGameStateToSleep);
   play1.mousePressed(updateGameStateToGarden)
-  play2.mousePressed(updateGameStateToPlay);
+  play2.mousePressed(updateGameStateToPlay);  
 }
 
 
@@ -75,7 +75,8 @@ function draw() {
     lazy.resize(500,500)
     bottleimage.visible=true
   }
-
+  
+  console.log("gameSt " + gameState)
   if(gameState===1){
     dog2.addImage(dog_happy)
     dog2.scale=0.8
@@ -175,22 +176,26 @@ function readLastFed(data){
 }
 
 function feedDog(){
-  
-  dog2.addImage(dog_happy);
-  dog_happy.resize(100,100);
- // dog_happy.resize(100,100)
-
+  gameState =1; 
+  database.ref('/').update({'gameState':gameState})
+ 
   if (foodObj.getFoodStock() > 1)
   {
     foodObj.updateFoodStock(foodObj.getFoodStock()-1)
     database.ref('/').update({
       FoodStock:foodObj.getFoodStock(),
       LastFed:hour()
+      
     })
+
+  
   }
+  //dog2.visible=true
 }
 
 function addFoods(){
+  gameState =2; 
+  database.ref('/').update({'gameState':gameState})
   foodStock1++
   database.ref('/').update({
     FoodStock:foodStock1   
